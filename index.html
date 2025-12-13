@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adarsh Gesture Verse 3D</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loading">Initializing Vision & Graphics...</div>
+
+    <video id="video-input" playsinline></video>
+
+    <div id="canvas-container"></div>
+
+    <div id="ui">
+        <h1>Particle Engine</h1>
+        <div class="hud-item">
+            Current Shape: <span id="shape-name" style="color:#00ffcc">Sphere</span>
+        </div>
+        <div class="hud-item">
+            Status: <span id="status-text">Waiting for hand...</span>
+        </div>
+        <p>
+            Gestures:<br>
+            👋 Move Hand: Rotate/Color<br>
+            ✌️ Victory Sign: Switch Shape<br>
+            👌 Pinch: Compress/Scale
+        </p>
+    </div>
+
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+
+    <!-- Your JS -->
+    <script src="script.js"></script>
+</body>
+</html>
